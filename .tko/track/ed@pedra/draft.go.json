@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_14-25-27",
+            "content": "@@ -17,569 +17,52 @@\n ort \n-(%0A    %22fmt%22%0A    %22math%22%0A)%0Afunc main() %7B%0A    var N int%0A    fmt.Scan(&N)%0A%0A    indVencedor := -1%0A    menDiferenca := 101%0A%0A    for i := 0; i %3C N; i++ %7B%0A        var a, b int%0A        fmt.Scan(&a, &b)%0A%0A        if a %3E= 10 && b %3E= 10 %7B%0A            diferenca := int(math.Abs(float64(a - b)))%0A%0A            if indVencedor == -1 %7C%7C diferenca %3C menDiferenca%7B%0A                indVencedor = i%0A                menDiferenca = diferenca%0A            %7D%0A        %7D%0A    %7D%0A%0A    if indVencedor == -1 %7B%0A        fmt.Println(%22sem ganhador%22)%0A    %7D else %7B%0A        fmt.Println(indVencedor)%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-17_14-38-04",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"math\"\n)\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    indVencedor := -1\n    menDiferenca := 101\n\n    for i := 0; i < N; i++ {\n        var a, b int\n        fmt.Scan(&a, &b)\n\n        if a >= 10 && b >= 10 {\n            diferenca := int(math.Abs(float64(a - b)))\n\n            if indVencedor == -1 || diferenca < menDiferenca{\n                indVencedor = i\n                menDiferenca = diferenca\n            }\n        }\n    }\n\n    if indVencedor == -1 {\n        fmt.Println(\"sem ganhador\")\n    } else {\n        fmt.Println(indVencedor)\n    }\n}\n",
+            "lines": "32"
+        }
+    ]
+}
