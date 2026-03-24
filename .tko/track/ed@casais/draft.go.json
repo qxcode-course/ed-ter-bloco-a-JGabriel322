@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_16-41-54",
+            "content": "@@ -1,9 +1,8 @@\n-%0A\n package \n@@ -41,17 +41,28 @@\n     \n-var n int%0A\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        }
+    ]
+}

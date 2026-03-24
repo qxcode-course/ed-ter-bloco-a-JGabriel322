@@ -1,0 +1,22 @@
+2026-03-24 13:30:21, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-24 13:30:27, EXEC, v:1, k:ed@casais, mode:FREE
+2026-03-24 13:30:41, EXEC, v:1, k:ed@casais, mode:FREE
+2026-03-24 13:30:55, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-24 13:30:57, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-24 13:31:05, EXEC, v:1, k:ed@casais, mode:FREE
+2026-03-24 13:31:15, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-24 13:31:23, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-24 13:32:01, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-24 13:32:48, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-24 13:36:39, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-24 13:58:17, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-24 13:58:19, EXEC, v:1, k:ed@casais, mode:FULL, size:7, fail:COMP
+2026-03-24 13:58:19, EXEC, v:1, k:ed@casais, mode:FULL, size:7, fail:COMP
+2026-03-24 14:03:41, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-24 14:04:05, MOVE, v:1, k:ed@princesa, mode:DOWN
+2026-03-24 14:04:07, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-24 14:06:33, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-24 14:07:02, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-24 14:16:21, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-24 14:16:25, MOVE, v:1, k:ed@apagando, mode:DOWN
+2026-03-24 14:16:27, MOVE, v:1, k:ed@apagando, mode:PICK
