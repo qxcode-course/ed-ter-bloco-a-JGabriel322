@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_22-16-15",
+            "content": "@@ -349,17 +349,17 @@\n if i == \n-t\n+n\n -1 %7B%0A%09%09%09\n@@ -426,16 +426,20 @@\n %0A%09%09%7D%0A%09%7D%0A\n+    \n %0A%09fmt.Pr\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-31_22-16-34",
+            "content": "@@ -372,15 +372,8 @@\n int(\n-%22%5B %22 + \n resu\n@@ -416,14 +416,12 @@\n t%5Bi%5D\n- +\n+,\n  %22 \n-%5D\n %22)%0A%09\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-31_22-17-16",
+            "content": "@@ -308,28 +308,8 @@\n  %7D%0A%0A\n-    fmt.Print(%22%5B %22)%0A\n     \n@@ -360,32 +360,39 @@\n  %7B%0A%09%09%09fmt.Print(\n+%22%5B %22 + \n result%5Bi%5D)%0A%09%09%7D e\n@@ -423,12 +423,14 @@\n t%5Bi%5D\n-,\n+ +\n  %22 \n+%5D\n %22)%0A%09\n@@ -449,20 +449,16 @@\n Println(\n-%22 %5D%22\n )%0A    %0A%7D\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-31_22-19-04",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t, r int\n    fmt.Scan(&t, &r)\n\n    rotaciona := make([]int, t)\n    for i := 0; i < t; i++ {\n        fmt.Scan(&rotaciona[i])\n    }\n\n    result := make([]int, t)\n\n    for i := 0; i < t; i++ {\n        novaPos := (i+r)%t\n        result[novaPos] = rotaciona[i]\n    }\n\n    fmt.Print(\"[ \")\n    for i := 0; i < t; i++ {\n        if i == t-1 {\n\t\t\tfmt.Print(result[i])\n\t\t} else {\n\t\t\tfmt.Print(result[i], \" \")\n\t\t}\n\t}\n\n\tfmt.Println(\" ]\")\n    \n}\n",
+            "lines": "30"
+        }
+    ]
+}

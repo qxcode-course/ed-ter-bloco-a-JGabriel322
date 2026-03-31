@@ -31,3 +31,32 @@
 2026-03-31 12:30:47, MOVE, v:1, k:ed@apagando, mode:BACK
 2026-03-31 12:31:17, MOVE, v:1, k:ed@buscas, mode:DOWN
 2026-03-31 12:31:23, MOVE, v:1, k:ed@buscas, mode:PICK
+2026-03-31 12:40:30, MOVE, v:1, k:ed@buscas, mode:BACK
+2026-03-31 12:44:52, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-03-31 12:49:39, EXEC, v:1, k:ed@apagando, mode:FULL, rate:100
+2026-03-31 12:49:39, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-03-31 12:49:47, MOVE, v:1, k:ed@buscas, mode:PICK
+2026-03-31 13:11:36, EXEC, v:1, k:ed@buscas, mode:FULL, size:33, fail:COMP
+2026-03-31 13:11:47, EXEC, v:1, k:ed@buscas, mode:FREE
+2026-03-31 13:12:13, EXEC, v:1, k:ed@buscas, mode:FULL, size:32, fail:COMP
+2026-03-31 13:37:51, MOVE, v:1, k:ed@buscas, mode:BACK
+2026-03-31 13:37:58, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-03-31 13:40:20, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-03-31 21:44:01, MOVE, v:1, k:ed@buscas, mode:PICK
+2026-03-31 21:44:08, EXEC, v:1, k:ed@buscas, mode:FULL, fail:COMP
+2026-03-31 22:00:12, EXEC, v:1, k:ed@buscas, mode:FULL, size:39, fail:COMP
+2026-03-31 22:00:41, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:39
+2026-03-31 22:02:02, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:39
+2026-03-31 22:05:06, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:43
+2026-03-31 22:05:46, MOVE, v:1, k:ed@buscas, mode:PICK
+2026-03-31 22:05:58, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0
+2026-03-31 22:08:54, EXEC, v:1, k:ed@buscas, mode:FULL, rate:100, size:45
+2026-03-31 22:09:13, MOVE, v:1, k:ed@buscas, mode:BACK
+2026-03-31 22:09:19, MOVE, v:1, k:ed@rotacoes, mode:DOWN
+2026-03-31 22:09:22, MOVE, v:1, k:ed@rotacoes, mode:PICK
+2026-03-31 22:16:15, EXEC, v:1, k:ed@rotacoes, mode:FULL, size:29, fail:COMP
+2026-03-31 22:16:34, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:0, size:29
+2026-03-31 22:17:16, EXEC, v:1, k:ed@rotacoes, mode:FULL, size:29, fail:COMP
+2026-03-31 22:18:52, MOVE, v:1, k:ed@rotacoes, mode:PICK
+2026-03-31 22:19:04, EXEC, v:1, k:ed@rotacoes, mode:FULL, rate:100, size:30
+2026-03-31 22:19:10, MOVE, v:1, k:ed@rotacoes, mode:BACK

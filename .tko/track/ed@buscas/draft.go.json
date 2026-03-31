@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_13-11-36",
+            "content": "@@ -1,8 +1,9 @@\n+%0A\n package \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-31_13-12-13",
+            "content": "@@ -23,214 +23,65 @@\n mt%22%0A\n-%0A\n func ma\n-tchingStrings (strings %5B%5Dstring, consultas %5B%5Dstring ) %5B%5Dint %7B%0A    cont := make(map%5Bstring%5D\n+in() %7B%0A    var n \n int\n-)\n %0A    f\n-or i := 0; i %3C len(strings); i++ %7B%0A        cont%5Bstrings%5Bi%5D%5D = cont%5Bstrings%5Bi%5D%5D+1%0A    %7D%0A%0A    result\n+mt.Scan(&n)%0A%0A    strings\n  := \n@@ -96,21 +96,9 @@\n nt, \n-len(consutas)\n+n\n )%0A  \n@@ -119,22 +119,9 @@\n i %3C \n-len(consultas)\n+n\n ; i+\n@@ -136,46 +136,37 @@\n     \n-result%5Bi%5D = cont%5Bconsulta\n+fmt.Scan(&string\n s%5Bi%5D\n-%5D\n+)\n %0A    %7D%0A%0A\n     \n@@ -165,51 +165,16 @@\n  %7D%0A%0A\n-    return result%0A%7D%0A%0Afunc main() %7B%0A\n     var \n n in\n@@ -161,33 +161,33 @@\n %0A    %7D%0A%0A    var \n-n\n+m\n  int%0A    fmt.Sca\n@@ -185,39 +185,40 @@\n   fmt.Scan(&\n-n\n+m\n )%0A%0A    \n-strings\n+consulta\n  := make(%5B%5Ds\n@@ -220,17 +220,14 @@\n e(%5B%5D\n-str\n in\n-g, n\n+t, m\n )%0A  \n@@ -236,33 +236,33 @@\n for i := 0; i %3C \n-n\n+m\n ; i++ %7B%0A        \n@@ -270,23 +270,25 @@\n mt.Scan(\n-strings\n+&consulta\n %5Bi%5D)%0A   \n@@ -299,79 +299,65 @@\n     \n-var m int%0A    fmt.Scan(&m)%0A%0A    consultas := make(%5B%5Dstring, m)%0A\n+for i := 0; i %3C m; i++ %7B%0A        count := 0%0A%0A    \n     for \n i :=\n@@ -352,32 +352,33 @@\n     for \n-i\n+j\n  := 0; \n-i %3C m; i\n+j %3C n.; j\n ++ %7B%0A   \n@@ -386,165 +386,120 @@\n     \n-fmt.Scan(consultas%5Bi%5D)\n+    if consulta%5Bi%5D == strings%5Bj%5D %7B\n %0A    \n-%7D%0A%0A\n     \n-result := matchingStrings(strings, consultas)%0A    for i := 0; i %3C len(result); i++ %7B%0A        fmt.Print(result%5Bi%5D, %22 %22)%0A    %7D\n+        count++%0A            %7D%0A        %7D%0A    %7D%0A%0A    fmt.Println(count)%0A\n %0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-03-31_22-00-12",
+            "content": "@@ -246,25 +246,24 @@\n t, len(consu\n-l\n tas))%0A    fo\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-31_22-00-41",
+            "content": "@@ -491,17 +491,16 @@\n mt.Scan(\n-&\n strings%5B\n@@ -623,17 +623,16 @@\n mt.Scan(\n-&\n consulta\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-31_22-02-02",
+            "content": "@@ -739,94 +739,8 @@\n + %7B%0A\n-        if i == len(result)-1 %7B%0A            fmt.Print(result%5Bi%5D)%0A        %7D else %7B%0A    \n     \n@@ -773,18 +773,8 @@\n  %22)%0A\n-        %7D%0A\n     \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-31_22-05-06",
+            "content": "@@ -874,26 +874,7 @@\n    %7D\n-%0A%0A    fmt.Println()\n %0A%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-31_22-08-54",
+            "content": "package main\nimport \"fmt\"\n\nfunc matchingStrings (strings []string, consultas []string ) []int {\n    cont := make(map[string]int)\n    for i := 0; i < len(strings); i++ {\n        cont[strings[i]] = cont[strings[i]]+1\n    }\n\n    result := make([]int, len(consultas))\n    for i := 0; i < len(consultas); i++ {\n        result[i] = cont[consultas[i]]\n    }\n\n    return result\n}\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    strings := make([]string, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&strings[i])\n    }\n\n    var m int\n    fmt.Scan(&m)\n\n    consultas := make([]string, m)\n    for i := 0; i < m; i++ {\n        fmt.Scan(&consultas[i])\n    }\n\n    result := matchingStrings(strings, consultas)\n    for i := 0; i < len(result); i++ {\n        if i == len(result)-1 {\n            fmt.Print(result[i])\n        } else {\n            fmt.Print(result[i], \" \")\n        }\n    }\n\n    fmt.Println()\n}\n",
+            "lines": "45"
+        }
+    ]
+}

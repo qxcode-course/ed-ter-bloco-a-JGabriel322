@@ -21,7 +21,8 @@ Para cada consulta, adicionamos um elemento ao nosso vetor de retorno.
 
 Complete a função *matchingStrings*. A função deve retornar um vetor de números inteiros representando a frequência de ocorrência de cada sequência de consultas em *sequências* .
 
-matchingStrings possui os seguintes parâmetros:
+
+ possui os seguintes parâmetros:
 
 - *strings* - uma matriz de strings para pesquisar
 - *consultas* - uma matriz de cadeias de consulta
