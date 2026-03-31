@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_11-18-38",
+            "content": "@@ -39,17 +39,16 @@\n %7B%0A    va\n-r\n  n, e in\n@@ -79,112 +79,7 @@\n     \n-pessoas := make(%5B%5Dint, n)%0A    for i = 0; i %3C n; i++ %7B%0A        pessoas%5Bi%5D = i+1%0A    %7D%0A%0A    indice := e - 1\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_11-40-01",
+            "content": "@@ -170,542 +170,22 @@\n     \n-tamanho := n%0A    indice := e-1%0A%0A    for tamanho %3E 1 %7B%0A        fmt.Print(%22%5B%22)%0A        for i := 0; i %3C tamanho; i++ %7B%0A            if i == indice %7B%0A                fmt.Printf(%22%3E%25d %22, pessoas%5Bi%5D)%0A            %7D else %7B%0A                fmt.Printf(%22%25d %22, pessoas%5Bi%5D)%0A            %7D%0A        %7D%0A        fmt.Print(%22%5D%22)%0A%0A        vitima := (vitima+1)%25tamanho%0A        for i := vitima; i %3C tamanho-1; i++ %7B%0A            pessoas%5Bi%5D =  pessoas%5B1+i%5D%0A        %7D%0A%0A        tamanho--%0A        indice = vitima%25tamanho%0A    %7D%0A%0A    fmt.Printf(%22%5B %3E%25d %5D%5Cn%22, pessoas%5B0%5D)%0A%7D\n+indice := e - 1%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_11-52-06",
+            "content": "@@ -104,33 +104,32 @@\n t, n)%0A    for i \n-:\n = 0; i %3C n; i++ \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-31_11-52-26",
+            "content": "@@ -506,11 +506,9 @@\n a+1)\n- %25 \n+%25\n tama\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-31_11-53-06",
+            "content": "@@ -517,17 +517,8 @@\n nho%0A\n-        %0A\n     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-31_11-53-51",
+            "content": "@@ -497,26 +497,36 @@\n := (\n-indice+1)%25tamanho%0A\n+vitima+1) %25 tamanho%0A        \n %0A   \n@@ -592,16 +592,17 @@\n oas%5Bi%5D =\n+ \n  pessoas\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-31_11-55-17",
+            "content": "@@ -686,11 +686,11 @@\n (%22%5B \n+%3E\n %25d\n-%3E\n  %5D%5Cn\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-31_11-55-42",
+            "content": "@@ -340,19 +340,19 @@\n Printf(%22\n+%3E\n %25d\n-%3E\n  %22, pess\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-31_11-55-58",
+            "content": "@@ -344,18 +344,16 @@\n tf(%22%25d%3E \n-%5Cn\n %22, pesso\n@@ -411,18 +411,16 @@\n ntf(%22%25d \n-%5Cn\n %22, pesso\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-31_11-56-26",
+            "content": "@@ -344,16 +344,18 @@\n tf(%22%25d%3E \n+%5Cn\n %22, pesso\n@@ -413,16 +413,18 @@\n ntf(%22%25d \n+%5Cn\n %22, pesso\n@@ -656,72 +656,16 @@\n tima\n-%0A        if indice %3E= tamanho %7B%0A            indice = 0%0A        %7D\n+%25tamanho\n %0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-31_11-58-44",
+            "content": "@@ -470,18 +470,16 @@\n Print(%22%5D\n-%5Cn\n %22)%0A%0A    \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-31_12-01-25",
+            "content": "@@ -340,17 +340,16 @@\n Printf(%22\n- \n %25d%3E %22, p\n@@ -470,16 +470,18 @@\n Print(%22%5D\n+%5Cn\n %22)%0A%0A    \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-31_12-02-07",
+            "content": "@@ -344,16 +344,17 @@\n tf(%22 %25d%3E\n+ \n %22, pesso\n@@ -409,17 +409,16 @@\n Printf(%22\n- \n %25d %22, pe\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-31_12-02-25",
+            "content": "@@ -408,16 +408,17 @@\n Printf(%22\n+ \n %25d %22, pe\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-31_12-02-34",
+            "content": "@@ -241,17 +241,16 @@\n Print(%22%5B\n- \n %22)%0A     \n@@ -340,20 +340,20 @@\n Printf(%22\n+ \n %25d%3E\n- \n %22, pesso\n@@ -469,17 +469,16 @@\n .Print(%22\n- \n %5D%22)%0A%0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-31_12-03-09",
+            "content": "@@ -470,16 +470,17 @@\n .Print(%22\n+ \n %5D%22)%0A%0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-31_12-03-16",
+            "content": "@@ -472,10 +472,8 @@\n rint\n-ln\n (%22%5D%22\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-31_12-03-44",
+            "content": "@@ -62,18 +62,16 @@\n fmt.Scan\n-ln\n (&n, &e)\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-31_12-09-13",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, e int\n    fmt.Scanln(&n, &e)\n\n    pessoas := make([]int, n)\n    for i := 0; i < n; i++ {\n        pessoas[i] = i+1\n    }\n\n    tamanho := n\n    indice := e-1\n\n    for tamanho > 1 {\n        fmt.Print(\"[ \")\n        for i := 0; i < tamanho; i++ {\n            if i == indice {\n                fmt.Printf(\"%d> \", pessoas[i])\n            } else {\n                fmt.Printf(\"%d \", pessoas[i])\n            }\n        }\n        fmt.Println(\"]\")\n\n        vitima := (indice+1)%tamanho\n\n        for i := vitima; i < tamanho-1; i++ {\n            pessoas[i] = pessoas[1+i]\n        }\n\n        tamanho--\n        indice = vitima\n        if indice >= tamanho {\n            indice = 0\n        }\n    }\n\n    fmt.Printf(\"[ %d> ]\\n\", pessoas[0])\n}",
+            "lines": "40"
+        }
+    ]
+}
