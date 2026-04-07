@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_13-50-59",
+            "content": "@@ -52,48 +52,8 @@\n t %7B%0A\n-    if n == 0 %7B%0A        return 0%0A    %7D%0A%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-01_13-51-47",
+            "content": "@@ -88,16 +88,20 @@\n %0A    %7D%0A%0A\n+    \n %0A%7D%0Afunc \n@@ -145,48 +145,7 @@\n n)%0A%0A\n-    num_resto(n)%0A    fmt.Print(num_resto)\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-01_13-52-28",
+            "content": "@@ -154,10 +154,35 @@\n esto(n)%0A\n+    fmt.Print(num_resto)%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-01_13-52-43",
+            "content": "@@ -92,68 +92,8 @@\n  %7D%0A%0A\n-    r := n%252%0A    num_resto(n/2)%0A    fmt.Print(num_resto, r)%0A\n %0A%7D%0Af\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-01_13-54-38",
+            "content": "@@ -35,21 +35,21 @@\n m_resto(\n-n \n int\n+ n\n ) int %7B%0A\n@@ -78,16 +78,18 @@\n   return\n+ 0\n %0A    %7D%0A%0A\n@@ -105,22 +105,8 @@\n n%252%0A\n-    q := n/2%0A%0A\n     \n@@ -115,17 +115,19 @@\n m_resto(\n-q\n+n/2\n )%0A    fm\n@@ -138,9 +138,17 @@\n int(\n-q\n+num_resto\n , r)\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-01_14-00-44",
+            "content": "@@ -127,17 +127,17 @@\n m_resto(\n-n\n+q\n )%0A    fm\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-01_14-01-18",
+            "content": "@@ -41,16 +41,20 @@\n o(n int)\n+ int\n  %7B%0A    i\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-01_14-02-22",
+            "content": "@@ -123,17 +123,17 @@\n m_resto(\n-q\n+n\n )%0A    fm\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-01_14-02-41",
+            "content": "@@ -143,21 +143,9 @@\n rint\n-f(%22%25d %25d%5Cn%22, \n+(\n q, r\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-01_14-03-17",
+            "content": "package main\nimport \"fmt\"\n\nfunc num_resto(n int) {\n    if n == 0 {\n        return\n    }\n\n    r := n%2\n    q := n/2\n\n    num_resto(q)\n    fmt.Printf(\"%d %d\\n\", q, r)\n\n}\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    num_resto(n)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

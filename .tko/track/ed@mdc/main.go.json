@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_13-36-12",
+            "content": "@@ -64,64 +64,8 @@\n rn 0\n-%0A%0A%09if a == 0 %7B%0A%09%09return b%0A%09%7D%0A%0A%09if b == 0 %7B%0A%09%09return a%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-01_13-39-13",
+            "content": "@@ -79,32 +79,16 @@\n 0 %7B%0A\n-%09%09mdc(a, b) = b%0A\n %09%09return\n %0A%09%7D%0A\n@@ -79,24 +79,26 @@\n 0 %7B%0A%09%09return\n+ b\n %0A%09%7D%0A%0A%09if b =\n@@ -107,32 +107,16 @@\n 0 %7B%0A\n-%09%09mdc(a, b) = a%0A\n %09%09return\n %0A%09%7D%0A\n@@ -111,16 +111,18 @@\n %09%09return\n+ a\n %0A%09%7D%0A%7D%0A%0Af\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-01_13-40-12",
+            "content": "@@ -51,16 +51,27 @@\n ) int %7B%0A\n+%09return 0%0A%0A\n %09if a ==\n@@ -79,16 +79,32 @@\n 0 %7B%0A\n+%09%09mdc(a, b) = b%0A\n %09%09return\n  b%0A%09\n@@ -103,27 +103,53 @@\n turn\n- b\n %0A%09%7D%0A%0A%09\n-mdc(a, a%25b)\n+if b == 0 %7B%0A%09%09mdc(a, b) = a%0A%09%09return%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-01_13-44-18",
+            "content": "@@ -55,17 +55,17 @@\n t %7B%0A%09if \n-b\n+a\n  == 0 %7B%0A\n@@ -73,17 +73,17 @@\n %09return \n-a\n+b\n %0A%09%7D%0A%0A%09md\n@@ -84,17 +84,17 @@\n %7D%0A%0A%09mdc(\n-b\n+a\n , a%25b)%0A%7D\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-01_13-44-43",
+            "content": "@@ -80,23 +80,16 @@\n  a%0A%09%7D%0A%0A%09\n-return \n mdc(b, a\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-01_13-46-04",
+            "content": "@@ -55,37 +55,8 @@\n t %7B%0A\n-%09if a == 0 %7B%0A%09%09return b%0A%09%7D%0A%09%0A\n %09if \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-01_13-46-48",
+            "content": "@@ -82,29 +82,9 @@\n %0A%09%7D%0A\n-%0A%09return mdc(a, a%25b)%0A\n+%09\n %0A%09if\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-01_13-47-23",
+            "content": "@@ -79,16 +79,37 @@\n n b%0A%09%7D%0A%0A\n+%09return mdc(a, a%25b)%0A%0A\n %09if b ==\n@@ -132,19 +132,8 @@\n %09%7D%0A%0A\n-%09r := a%25b%0A%0A\n %09ret\n@@ -143,17 +143,19 @@\n  mdc(b, \n-r\n+a%25b\n )%0A%7D%0A%0Afun\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-01_13-50-14",
+            "content": "@@ -106,17 +106,16 @@\n rn a%0A%09%7D%0A\n-%09\n %0A%09r := a\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-01_13-50-44",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc mdc(a, b int) int {\n\tif a == 0 {\n\t\treturn b\n\t}\n\n\tif b == 0 {\n\t\treturn a\n\t}\n\t\n\tr := a%b\n\n\treturn mdc(b, r)\n}\n\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a, &b)\n\tfmt.Println(mdc(a, b))\n}\n",
+            "lines": "25"
+        }
+    ]
+}

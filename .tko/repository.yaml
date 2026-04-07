@@ -13,7 +13,7 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@map_set
+- ed@rec
 tasks:
   ed@pintando: '{rate:100}'
   ed@mumia: '{rate:100}'
@@ -23,6 +23,13 @@ tasks:
   ed@apagando: '{rate:100}'
   ed@buscas: '{rate:100}'
   ed@rotacoes: '{rate:100}'
+  ed@resto: '{rate:100}'
+  ed@mdc: '{rate:100}'
+  ed@queimada: '{rate:100}'
+  ed@labirinto: '{rate:100}'
+  ed@eh_primo: '{rate:100}'
+  ed@enesimo: '{rate:100}'
+  ed@vetequals: '{rate:100}'
 flags:
   panel: 1
   inbox: 1
@@ -30,4 +37,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@analise
+selected: ed@enesimo

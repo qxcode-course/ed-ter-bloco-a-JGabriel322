@@ -1,0 +1,61 @@
+2026-04-01 13:30:41, MOVE, v:1, k:ed@triangulo, mode:DOWN
+2026-04-01 13:31:20, MOVE, v:1, k:ed@resto, mode:DOWN
+2026-04-01 13:31:21, MOVE, v:1, k:ed@resto, mode:PICK
+2026-04-01 13:35:46, MOVE, v:1, k:ed@resto, mode:BACK
+2026-04-01 13:36:05, MOVE, v:1, k:ed@mdc, mode:DOWN
+2026-04-01 13:36:08, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-01 13:36:12, EXEC, v:1, k:ed@mdc, mode:FULL, rate:0, size:15
+2026-04-01 13:39:13, EXEC, v:1, k:ed@mdc, mode:FULL, size:23, fail:COMP
+2026-04-01 13:40:12, EXEC, v:1, k:ed@mdc, mode:FULL, size:25, fail:COMP
+2026-04-01 13:44:18, EXEC, v:1, k:ed@mdc, mode:FULL, size:19, fail:COMP
+2026-04-01 13:44:43, EXEC, v:1, k:ed@mdc, mode:FULL, size:19, fail:COMP
+2026-04-01 13:46:04, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:19
+2026-04-01 13:46:48, EXEC, v:1, k:ed@mdc, mode:LOCK, rate:100, size:23
+2026-04-01 13:47:23, EXEC, v:1, k:ed@mdc, mode:FULL, rate:0, size:25
+2026-04-01 13:47:38, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-01 13:50:14, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:25
+2026-04-01 13:50:44, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:25
+2026-04-01 13:50:53, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-04-01 13:50:56, MOVE, v:1, k:ed@resto, mode:PICK
+2026-04-01 13:50:59, EXEC, v:1, k:ed@resto, mode:FULL, size:12, fail:COMP
+2026-04-01 13:51:47, EXEC, v:1, k:ed@resto, mode:FULL, size:16, fail:COMP
+2026-04-01 13:52:28, EXEC, v:1, k:ed@resto, mode:FULL, size:17, fail:COMP
+2026-04-01 13:52:43, EXEC, v:1, k:ed@resto, mode:FULL, size:16, fail:COMP
+2026-04-01 13:54:38, EXEC, v:1, k:ed@resto, mode:FULL, size:19, fail:COMP
+2026-04-01 14:00:44, EXEC, v:1, k:ed@resto, mode:FULL, size:21, fail:COMP
+2026-04-01 14:01:18, EXEC, v:1, k:ed@resto, mode:FULL, size:21, fail:COMP
+2026-04-01 14:02:22, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:21
+2026-04-01 14:02:41, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:21
+2026-04-01 14:03:17, EXEC, v:1, k:ed@resto, mode:FULL, rate:100, size:21
+2026-04-01 14:03:43, MOVE, v:1, k:ed@resto, mode:BACK
+2026-04-01 14:03:47, MOVE, v:1, k:ed@triangulo, mode:PICK
+2026-04-01 14:03:49, EXEC, v:1, k:ed@triangulo, mode:FULL, rate:0, size:47
+2026-04-01 14:05:42, MOVE, v:1, k:ed@triangulo, mode:BACK
+2026-04-01 14:05:51, MOVE, v:1, k:ed@queimada, mode:DOWN
+2026-04-01 14:05:52, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-01 14:07:33, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-04-01 14:07:36, MOVE, v:1, k:ed@labirinto, mode:DOWN
+2026-04-01 14:07:38, MOVE, v:1, k:ed@labirinto, mode:PICK
+2026-04-01 14:08:01, EXEC, v:1, k:ed@labirinto, mode:FULL, size:46, fail:COMP
+2026-04-01 14:08:09, MOVE, v:1, k:ed@labirinto, mode:BACK
+2026-04-01 14:08:30, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-01 14:10:56, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100
+2026-04-01 14:12:51, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-04-01 14:12:53, MOVE, v:1, k:ed@resto, mode:PICK
+2026-04-01 14:13:45, EXEC, v:1, k:ed@resto, mode:FULL, rate:100
+2026-04-01 14:13:46, MOVE, v:1, k:ed@resto, mode:BACK
+2026-04-01 14:13:54, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-01 14:13:56, EXEC, v:1, k:ed@queimada, mode:FULL, size:38, fail:COMP
+2026-04-01 14:14:08, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-04-01 14:14:09, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-01 14:14:18, EXEC, v:1, k:ed@queimada, mode:FULL, fail:COMP
+2026-04-01 14:15:01, EXEC, v:1, k:ed@queimada, mode:FULL, rate:14, size:38
+2026-04-01 14:16:50, EXEC, v:1, k:ed@queimada, mode:FULL, rate:14, size:38
+2026-04-01 14:25:56, EXEC, v:1, k:ed@queimada, mode:FULL, size:43, fail:COMP
+2026-04-01 14:26:09, EXEC, v:1, k:ed@queimada, mode:FULL, size:42, fail:COMP
+2026-04-01 14:26:16, EXEC, v:1, k:ed@queimada, mode:FULL, size:42, fail:COMP
+2026-04-01 14:30:18, EXEC, v:1, k:ed@queimada, mode:FULL, fail:COMP
+2026-04-01 14:33:28, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-01 14:33:34, EXEC, v:1, k:ed@queimada, mode:FULL, size:42, fail:COMP
+2026-04-01 14:33:41, EXEC, v:1, k:ed@queimada, mode:FULL, size:42, fail:COMP
+2026-04-01 14:34:12, EXEC, v:1, k:ed@queimada, mode:FULL, size:43, fail:COMP

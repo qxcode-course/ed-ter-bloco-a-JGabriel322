@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_14-08-01",
+            "content": "@@ -42,18 +42,16 @@\n os%22%0A)%0A%0A%09\n-//\n _, _, _ \n@@ -76,18 +76,16 @@\n endPos%0A%09\n-//\n return f\n@@ -92,474 +92,8 @@\n alse\n-%0A%0Afunc isValid(grid %5B%5D%5B%5Drune, l, c int) bool %7B%0A%09if l %3C 0 %7C%7C l %3E= len(grid) %7C%7C c %3C 0 %7C%7C c %3E= len(grid%5B0%5D) %7B%0A%09%09return false%0A%09%7D%0A%0A%09return grid%5Bl%5D%5Bc%5D == ' '%0A%7D%0A%0Afunc search(grid %5B%5D%5B%5Drune, l, c int, end Pos) bool%7B%0A%09if l == end.l && c == end.c %7B%0A%09%09return true%0A%09%7D%0A%0A%09if !isValid(grid, l, c)%7B%0A%09%09return false%0A%09%7D%0A%0A%09grid%5Bl%5D%5Bc%5D = '.'%0A%0A%09if search(grid, l, c+1, end) %7C%7C %0A%09%09search(grid, l, c-1, end) %7C%7C%0A%09%09search(grid, l-1, c, end) %7C%7C%0A%09%09search(grid, l, c+1, end) %7B%0A%09%09%09return true%0A%09%09%7D%0A%7D\n %0Afun\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-04-06_20-21-49",
+            "content": "@@ -560,41 +560,8 @@\n %0A%09%09%7D\n-%0A%0A%09gird%5Bl%5D%5Bc%5D = ' '%0A%09return false\n %0A%7D%0Af\n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-04-06_20-22-42",
+            "content": "@@ -282,24 +282,21 @@\n l, c\n-, endL, endC int\n+ int, end Pos\n ) bo\n@@ -311,17 +311,18 @@\n l == end\n-L\n+.l\n  && c ==\n@@ -329,9 +329,10 @@\n  end\n-C\n+.c\n  %7B%0A%09\n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-04-06_20-28-10",
+            "content": "@@ -437,31 +437,24 @@\n  l, c+1, end\n-L, endC\n ) %7C%7C %0A%09%09sear\n@@ -469,31 +469,24 @@\n  l, c-1, end\n-L, endC\n ) %7C%7C%0A%09%09searc\n@@ -504,23 +504,16 @@\n , c, end\n-L, endC\n ) %7C%7C%0A%09%09s\n@@ -535,23 +535,16 @@\n c+1, end\n-L, endC\n ) %7B%0A%09%09%09r\n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-04-06_20-29-20",
+            "content": "@@ -550,13 +550,13 @@\n d, l\n-+1\n , c\n++1\n , en\n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-04-06_20-30-39",
+            "content": "@@ -585,26 +585,26 @@\n true%0A%09%09%7D%0A%0A%09g\n-r\n i\n+r\n d%5Bl%5D%5Bc%5D = ' \n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-04-06_20-31-03",
+            "content": "@@ -437,24 +437,31 @@\n  l, c+1, end\n+L, endC\n ) %7C%7C %0A%09%09sear\n@@ -476,24 +476,31 @@\n  l, c-1, end\n+L, endC\n ) %7C%7C%0A%09%09searc\n@@ -518,16 +518,23 @@\n , c, end\n+L, endC\n ) %7C%7C%0A%09%09s\n@@ -556,16 +556,23 @@\n , c, end\n+L, endC\n ) %7B%0A%09%09%09r\n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-04-06_20-31-43",
+            "content": "@@ -40,16 +40,17 @@\n %09%22os%22%0A)%0A\n+%0A\n %09//_, _,\n@@ -98,11 +98,8 @@\n se%0A%0A\n-%09%0A%0A\n func\n@@ -282,21 +282,24 @@\n l, c\n- int, end Pos\n+, endL, endC int\n ) bo\n@@ -318,10 +318,9 @@\n  end\n-.l\n+L\n  && \n@@ -331,10 +331,9 @@\n  end\n-.c\n+C\n  %7B%0A%09\n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-04-06_20-32-28",
+            "content": "@@ -97,40 +97,9 @@\n se%0A%0A\n-type Pos struct%7B%0A%09l int%0A%09c int%0A%7D\n+%09\n %0A%0Afu\n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-04-06_20-33-06",
+            "content": "@@ -311,17 +311,16 @@\n ne, \n-atual Pos\n+l, c int\n , en\n@@ -336,22 +336,16 @@\n ol%7B%0A%09if \n-atual.\n l == end\n@@ -350,22 +350,16 @@\n nd.l && \n-atual.\n c == end\n@@ -400,30 +400,19 @@\n d(grid, \n-atual.l, atual\n+l, \n c)%7B%0A%09%09re\n@@ -436,23 +436,11 @@\n rid%5B\n-atual.l%5D%5Batual.\n+l%5D%5B\n c%5D =\n@@ -462,31 +462,19 @@\n h(grid, \n-atual.l, atual.\n+l, \n c+1, end\n@@ -498,23 +498,11 @@\n id, \n-atual.l, atual.\n+l, \n c-1,\n@@ -529,25 +529,13 @@\n id, \n-atual.l-1, atual.\n+l-1, \n c, e\n@@ -560,25 +560,13 @@\n id, \n-atual.l+1, atual.\n+l+1, \n c, e\n",
+            "lines": "80"
+        },
+        {
+            "label": "2026-04-06_20-47-40",
+            "content": "@@ -685,23 +685,11 @@\n rid%5B\n-atual;l%5D%5Batual.\n+l%5D%5B\n c%5D =\n",
+            "lines": "80"
+        },
+        {
+            "label": "2026-04-06_20-47-58",
+            "content": "@@ -721,17 +721,16 @@\n false%0A%7D%0A\n-%0A\n func mai\n",
+            "lines": "80"
+        },
+        {
+            "label": "2026-04-06_20-48-49",
+            "content": "@@ -678,33 +678,33 @@\n %09%09%7D%0A%0A%09grid%5Batual\n-.\n+;\n l%5D%5Batual.c%5D = ' \n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-06_20-50-22",
+            "content": "@@ -427,17 +427,16 @@\n l, atual\n-.\n c)%7B%0A%09%09re\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-06_20-50-36",
+            "content": "@@ -491,36 +491,32 @@\n if search(grid, \n-Pos%7B\n atual.l, atual.c\n@@ -517,17 +517,16 @@\n tual.c+1\n-%7D\n , end) %7C\n@@ -539,28 +539,24 @@\n earch(grid, \n-Pos%7B\n atual.l, atu\n@@ -561,17 +561,16 @@\n tual.c-1\n-%7D\n , end) %7C\n@@ -582,28 +582,24 @@\n earch(grid, \n-Pos%7B\n atual.l-1, a\n@@ -600,25 +600,24 @@\n l-1, atual.c\n-%7D\n , end) %7C%7C%0A%09%09\n@@ -629,20 +629,16 @@\n h(grid, \n-Pos%7B\n atual.l+\n@@ -647,17 +647,16 @@\n  atual.c\n-%7D\n , end) %7B\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-06_20-52-59",
+            "content": "@@ -510,18 +510,16 @@\n %7Batual.l\n-+1\n , atual.\n@@ -511,32 +511,34 @@\n atual.l, atual.c\n++1\n %7D, end) %7C%7C %0A%09%09se\n@@ -560,33 +560,33 @@\n atual.l, atual.c\n-+\n+-\n 1%7D, end) %7C%7C%0A%09%09se\n@@ -647,32 +647,34 @@\n rid, Pos%7Batual.l\n++1\n , atual.c-1%7D, en\n@@ -658,34 +658,32 @@\n ual.l+1, atual.c\n--1\n %7D, end) %7B%0A%09%09%09ret\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-06_20-55-00",
+            "content": "@@ -537,56 +537,8 @@\n %7C%7C %0A\n-%09%09search(grid, Pos%7Batual.l, atual.c-1%7D, end) %7C%7C%0A\n %09%09se\n@@ -625,16 +625,64 @@\n c%7D, end)\n+ %7C%7C%0A%09%09search(grid, Pos%7Batual.l, atual.c-1%7D, end)\n  %7B%0A%09%09%09re\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-06_20-56-40",
+            "content": "@@ -699,39 +699,8 @@\n %09%09%7D%0A\n-%09%0A%09grid%5Batual.l%5D%5Batual.c%5D = '.'\n %0A%09gr\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-06_21-00-34",
+            "content": "@@ -280,78 +280,8 @@\n  ' '\n- %7C%7C grid%5Bl%5D%5Bc%5D == 'F'%0A%0A%09if grid%5Bl%5D%5Bc%5D == 'F' %7B%0A%09%09endPos = Pos%7Bl, c%7D%0A%09%7D\n %0A%7D%0A%0A\n@@ -697,16 +697,46 @@\n e%0A%09%09%7D%0A%09%0A\n+%09grid%5Batual.l%5D%5Batual.c%5D = '.'%0A\n %09grid%5Bat\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-04-06_21-04-19",
+            "content": "@@ -297,16 +297,65 @@\n %5D == 'F'\n+%0A%0A%09if grid%5Bl%5D%5Bc%5D == 'F' %7B%0A%09%09endPos = Pos%7Bl, c%7D%0A%09%7D\n %0A%7D%0A%0Afunc\n",
+            "lines": "85"
+        },
+        {
+            "label": "2026-04-06_21-05-39",
+            "content": "@@ -236,39 +236,8 @@\n ) %7B%0A\n-%09%09grid%5Batual.l%5D%5Batual.c%5D = '.'%0A\n %09%09re\n@@ -237,27 +237,28 @@\n  %7B%0A%09%09return \n-tru\n+fals\n e%0A%09%7D%0A%0A%09retur\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-04-06_21-07-33",
+            "content": "@@ -232,16 +232,47 @@\n d%5B0%5D) %7B%0A\n+%09%09grid%5Batual.l%5D%5Batual.c%5D = '.'%0A\n %09%09return\n@@ -268,28 +268,27 @@\n .'%0A%09%09return \n-fals\n+tru\n e%0A%09%7D%0A%0A%09retur\n@@ -431,39 +431,8 @@\n c %7B%0A\n-%09%09grid%5Batual.l%5D%5Batual.c%5D = '.'%0A\n %09%09re\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-04-06_21-08-32",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\t//_, _, _ = grid, startPos, endPos\n\t//return false\n\ntype Pos struct{\n\tl int\n\tc int\n}\n\nfunc isValid(grid [][]rune, l, c int) bool {\n\tif l < 0 || l >= len(grid) || c < 0 || c >= len(grid[0]) {\n\t\treturn false\n\t}\n\n\treturn grid[l][c] == ' ' || grid[l][c] == 'F'\n}\n\nfunc search(grid [][]rune, atual Pos, end Pos) bool{\n\tif atual.l == end.l && atual.c == end.c {\n\t\tgrid[atual.l][atual.c] = '.'\n\t\treturn true\n\t}\n\n\tif !isValid(grid, atual.l, atual.c){\n\t\treturn false\n\t}\n\n\tgrid[atual.l][atual.c] = '.'\n\n\tif search(grid, Pos{atual.l+1, atual.c}, end) || \n\t\tsearch(grid, Pos{atual.l, atual.c-1}, end) ||\n\t\tsearch(grid, Pos{atual.l, atual.c+1}, end) ||\n\t\tsearch(grid, Pos{atual.l-1, atual.c}, end) {\n\t\t\treturn true\n\t\t}\n\t\n\tgrid[atual.l][atual.c] = ' '\n\treturn false\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tnl_nc := scanner.Text()\n\tvar nl, nc int\n\tfmt.Sscanf(nl_nc, \"%d %d\", &nl, &nc)\n\tgrid := make([][]rune, nl)\n\n\t// L\u00ea a gridriz\n\tfor i := range nl {\n\t\tscanner.Scan()\n\t\tgrid[i] = []rune(scanner.Text())\n\t}\n\n\t// Procura posi\u00e7\u00f5es de in\u00edcio e endPos e conserta para _\n\tvar startPos, endPos Pos\n\tfor l := range nl {\n\t\tfor c := range nc {\n\t\t\tif grid[l][c] == 'I' {\n\t\t\t\tgrid[l][c] = ' '\n\t\t\t\tstartPos = Pos{l, c}\n\t\t\t}\n\t\t\tif grid[l][c] == 'F' {\n\t\t\t\tgrid[l][c] = ' '\n\t\t\t\tendPos = Pos{l, c}\n\t\t\t}\n\t\t}\n\t}\n\n\tsearch(grid, startPos, endPos)\n\n\t// Imprime o labirinto final\n\tfor _, line := range grid {\n\t\tfmt.Println(string(line))\n\t}\n}\n",
+            "lines": "82"
+        }
+    ]
+}
